@@ -1,0 +1,1 @@
+{"uuid":"5a962625-1815-46bb-8a74-fb511e15418c","name":"Scenario: Check whether Admin can delete particular batch in batches list","children":["dfb77554-8bad-4de0-b70d-4e2af97caa58"],"befores":[],"afters":[],"start":1648088179788,"stop":1648088179792}

@@ -1,0 +1,1 @@
+{"uuid":"b4dc70ef-cb2d-4aa6-a0db-cc84fa41deb9","name":"Scenario: Check whether Admin can delete particular registered user in Manage users(admin) page","children":["2e8fccb6-194a-45d6-9cb3-d500a0a4d361"],"befores":[],"afters":[],"start":1648086859895,"stop":1648086859936}

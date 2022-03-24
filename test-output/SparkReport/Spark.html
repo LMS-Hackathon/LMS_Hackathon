@@ -1,0 +1,2514 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 23, 2022 07:15:18 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Launch Web Application</p>
+            <p class="text-sm">
+              <span>7:15:20 PM</span> / <span>00:00:06:234</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Launch Web Application</h5>
+<span class='badge badge-success'>03.23.2022 7:15:20 PM</span>
+<span class='badge badge-danger'>03.23.2022 7:15:26 PM</span>
+<span class='badge badge-default'>00:00:06:234</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin/user could able to navigate to Log-In Screen page</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.LaunchApplicationStepDefinitions.admin_user_is_on_lms_portal_with_login_button_link()">
+                <span>Given Admin/User is on LMS portal with Login button Link</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'LAPTOP-HH7IGSDH', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [17820cce220c5e2bc61639e5a22aab98, get {url=https://www.LMS-UI.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\sethu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57256}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57256/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 17820cce220c5e2bc61639e5a22aab98
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at stepDefinitions.LaunchApplicationStepDefinitions.admin_user_is_on_lms_portal_with_login_button_link(LaunchApplicationStepDefinitions.java:26)
+	at ?.Admin/User is on LMS portal with Login button Link(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Launch%20Web%20Application.feature:5)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.LaunchApplicationStepDefinitions.admin_user_clicks_on_login_button_link()">
+                <span>When Admin/User clicks on Login button link</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.LaunchApplicationStepDefinitions.admin_user_navigates_to_log_in_screen_page()">
+                <span>Then Admin/user navigates to Log-In Screen page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Page Functions</p>
+            <p class="text-sm">
+              <span>7:15:26 PM</span> / <span>00:00:21:238</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Login Page Functions</h5>
+<span class='badge badge-success'>03.23.2022 7:15:26 PM</span>
+<span class='badge badge-danger'>03.23.2022 7:15:47 PM</span>
+<span class='badge badge-default'>00:00:21:238</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log fail-bg mr-2">Fail</span>Login Data driven with valid Credentials</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="8"><span class="badge log fail-bg mr-2">Fail</span>Login Data driven with valid Credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given Admin/User is on LMS Log-In Screen</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'LAPTOP-HH7IGSDH', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0077c435466bccca4416c5b35079f6fe, get {url=https://www.LMS-UI.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\sethu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57275}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57275/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0077c435466bccca4416c5b35079f6fe
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at stepDefinitions.LoginPagestepDefinitions.admin_user_is_on_lms_log_in_screen(LoginPagestepDefinitions.java:32)
+	at ?.Admin/User is on LMS Log-In Screen(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Login%20Page%20Functions.feature:5)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When Admin/User enters Login Name as "<valid email>" and Password as "<valid password>"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When Admin/User click Submit button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Admin/user navigates to LMS Home Page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="13"><span class="badge log fail-bg mr-2">Fail</span>Login Data driven with valid Credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given Admin/User is on LMS Log-In Screen</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'LAPTOP-HH7IGSDH', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6f1d5fbf4d49c1bd4a2c56c8171592f2, get {url=https://www.LMS-UI.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\sethu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57310}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57310/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f1d5fbf4d49c1bd4a2c56c8171592f2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at stepDefinitions.LoginPagestepDefinitions.admin_user_is_on_lms_log_in_screen(LoginPagestepDefinitions.java:32)
+	at ?.Admin/User is on LMS Log-In Screen(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Login%20Page%20Functions.feature:5)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When Admin/User enters Login Name as "<valid email>" and Password as "<valid password>"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When Admin/User click Submit button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Admin/user navigates to LMS Home Page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="18"><span class="badge log fail-bg mr-2">Fail</span>Login Data driven with valid Credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given Admin/User is on LMS Log-In Screen</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'LAPTOP-HH7IGSDH', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5023ea6257331cfac8a7f03da069dca, get {url=https://www.LMS-UI.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\sethu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57350}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57350/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e5023ea6257331cfac8a7f03da069dca
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at stepDefinitions.LoginPagestepDefinitions.admin_user_is_on_lms_log_in_screen(LoginPagestepDefinitions.java:32)
+	at ?.Admin/User is on LMS Log-In Screen(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Login%20Page%20Functions.feature:5)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When Admin/User enters Login Name as "<valid email>" and Password as "<valid password>"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When Admin/User click Submit button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Admin/user navigates to LMS Home Page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="23"><span class="badge log fail-bg mr-2">Fail</span>Reset password link Data Driven</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="24"><span class="badge log fail-bg mr-2">Fail</span>Reset password link Data Driven</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given Admin/User is on Answer Security Question page by by clicking on Forgot password link</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.LoginPage.clickforgotPassword()" because "this.lp" is null
+	at stepDefinitions.LoginPagestepDefinitions.admin_user_is_on_answer_security_question_page_by_by_clicking_on_forgot_password_link(LoginPagestepDefinitions.java:73)
+	at ?.Admin/User is on Answer Security Question page by by clicking on Forgot password link(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Login%20Page%20Functions.feature:33)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When Admin/User enters Email Address as "<reset email>"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When Admin/User enters the Answer for security Question</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When Admin/User clicks on submit button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Valid Message   will be displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="30"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Assignment functions performed by Admin</p>
+            <p class="text-sm">
+              <span>7:15:48 PM</span> / <span>00:00:06:946</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Assignment functions performed by Admin</h5>
+<span class='badge badge-success'>03.23.2022 7:15:48 PM</span>
+<span class='badge badge-danger'>03.23.2022 7:15:55 PM</span>
+<span class='badge badge-default'>00:00:06:946</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="31"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can add New assignments for particular Batch</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageAssignmentsSteps.admin_is_on_add_tab_of_manage_assignments_page_admin_view_by_clicking_on_add_assignment_in_manage_assignments_page_admin()">
+                <span>Given Admin is on Add tab of manage Assignments page(admin view) by clicking on Add Assignment in Manage Assignments Page(admin)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'LAPTOP-HH7IGSDH', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e1eab0e521dab681c303a8c1f900a5d1, get {url=https://www.LMS-UI.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\sethu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57380}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57380/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e1eab0e521dab681c303a8c1f900a5d1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at stepDefinitions.ManageAssignmentsSteps.admin_is_on_add_tab_of_manage_assignments_page_admin_view_by_clicking_on_add_assignment_in_manage_assignments_page_admin(ManageAssignmentsSteps.java:36)
+	at ?.Admin is on Add tab of manage Assignments page(admin view) by clicking on Add Assignment in Manage Assignments Page(admin)(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20AssignmentsAddEdit(Admin).feature:4)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageAssignmentsSteps.admin_clicks_on_submit_button_after_selecting_batch_and_enters_assignment_name_assignment_description_assignment_due_upload_assignments()">
+                <span>When Admin clicks on submit button after selecting Batch and enters Assignment name, Assignment Description , Assignment Due, Upload assignments</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageAssignmentsSteps.created_assignments_will_be_displayed_in_manage_assignments_page_admin_and_manage_assignment_page_user_view()">
+                <span>Then Created assignments will be displayed in Manage Assignments Page(admin) and Manage Assignment page(User View)</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="35"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can Edit existing assignments for particular Batch</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageAssignmentsSteps.admin_is_on_edit_tab_of_manage_assignments_page_admin_view_by_clicking_on_add_assignment_in_manage_assignments_page_admin()">
+                <span>Given Admin is on Edit tab of manage Assignments page(admin view) by clicking on Add Assignment in Manage Assignments Page(admin)</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageAssignments_AdminPage.clickManageAssignments()" because "this.mp" is null
+	at stepDefinitions.ManageAssignmentsSteps.admin_is_on_edit_tab_of_manage_assignments_page_admin_view_by_clicking_on_add_assignment_in_manage_assignments_page_admin(ManageAssignmentsSteps.java:87)
+	at ?.Admin is on Edit tab of manage Assignments page(admin view) by clicking on Add Assignment in Manage Assignments Page(admin)(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20AssignmentsAddEdit(Admin).feature:9)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageAssignmentsSteps.admin_clicks_on_submit_button_after_updating_one_or_more_assignment_details()">
+                <span>When Admin clicks on submit button after updating one or more assignment details</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageAssignmentsSteps.updated_assignment_details_will_be_displayed_in_manage_assignments_page_admin_and_manage_assignment_page_user_view()">
+                <span>Then Updated assignment details will be displayed in Manage Assignments Page(admin) and Manage Assignment page(User View)</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="39"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can Delete existing assignments for particular Batch</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageAssignmentsSteps.admin_is_on_manage_assignments_page_admin()">
+                <span>Given Admin is on Manage Assignments Page(admin)</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageAssignments_AdminPage.clickManageAssignments()" because "this.mp" is null
+	at stepDefinitions.ManageAssignmentsSteps.admin_is_on_manage_assignments_page_admin(ManageAssignmentsSteps.java:129)
+	at ?.Admin is on Manage Assignments Page(admin)(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20AssignmentsAddEdit(Admin).feature:14)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageAssignmentsSteps.admin_clicks_on_trash_icon_after_selecting_existing_assignments()">
+                <span>When Admin clicks on Trash icon after selecting existing assignments</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageAssignmentsSteps.deleted_assignment_will_be_removed_from_admin_view_in_manage_assignments_page_admin_and_manage_assignment_page_user_view()">
+                <span>Then Deleted assignment will be removed from Admin View in Manage Assignments Page(admin) and Manage Assignment page(User View)</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="43"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Manage Attendence(Admin And Class Staff)Page</p>
+            <p class="text-sm">
+              <span>7:15:55 PM</span> / <span>00:00:24:578</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Manage Attendence(Admin And Class Staff)Page</h5>
+<span class='badge badge-success'>03.23.2022 7:15:55 PM</span>
+<span class='badge badge-danger'>03.23.2022 7:16:19 PM</span>
+<span class='badge badge-default'>00:00:24:578</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=43</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="44"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can view the attendance details</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageAttendanceSteps.admin_is_on_manage_attendance_admin_and_class_staff_page()">
+                <span>Given Admin is on Manage Attendance(Admin and Class Staff) page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'LAPTOP-HH7IGSDH', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fa471aa183a3f841ff925824940f17d8, get {url=https://www.LMS-UI.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\sethu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57411/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fa471aa183a3f841ff925824940f17d8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at stepDefinitions.ManageAttendanceSteps.admin_is_on_manage_attendance_admin_and_class_staff_page(ManageAttendanceSteps.java:38)
+	at ?.Admin is on Manage Attendance(Admin and Class Staff) page(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Attendence(Admin%20and%20Class%20Staff).feature:4)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageAttendanceSteps.admin_selects_batch_class_and_class_date()">
+                <span>When Admin Selects Batch,Class and Class Date</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageAttendanceSteps.student_attendance_can_be_viewed_succesfully_based_on_the_selected_criteria()">
+                <span>Then Student attendance can be viewed succesfully based on the selected criteria</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="48"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can save the attendance details</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageAttendanceSteps.admin_is_on_manage_attendance_admin_and_class_staff_page()">
+                <span>Given Admin is on Manage Attendance(Admin and Class Staff) page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'LAPTOP-HH7IGSDH', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [21cc6fd8df478d81554a60b70b38150e, get {url=https://www.LMS-UI.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\sethu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 21cc6fd8df478d81554a60b70b38150e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at stepDefinitions.ManageAttendanceSteps.admin_is_on_manage_attendance_admin_and_class_staff_page(ManageAttendanceSteps.java:38)
+	at ?.Admin is on Manage Attendance(Admin and Class Staff) page(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Attendence(Admin%20and%20Class%20Staff).feature:11)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageAttendanceSteps.admin_clicks_on_save_button_after_selecting_batch_and_class_and_marks_the_student_as_either(java.lang.String)">
+                <span>When Admin clicks on save button after selecting batch and class and marks the student as either "Present , Absent , Late, Excused , Unknown".</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageAttendanceSteps.student_attendance_details_will_be_saved_succeesfully()">
+                <span>Then Student attendance details will be saved  succeesfully .</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="52"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can reset the attendance details</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageAttendanceSteps.admin_is_on_manage_attendance_admin_and_class_staff_page()">
+                <span>Given Admin is on Manage Attendance(Admin and Class Staff) page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'LAPTOP-HH7IGSDH', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6d8575540018a5a7f121881da93cda13, get {url=https://www.LMS-UI.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\sethu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57481}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57481/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d8575540018a5a7f121881da93cda13
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at stepDefinitions.ManageAttendanceSteps.admin_is_on_manage_attendance_admin_and_class_staff_page(ManageAttendanceSteps.java:38)
+	at ?.Admin is on Manage Attendance(Admin and Class Staff) page(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Attendence(Admin%20and%20Class%20Staff).feature:17)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageAttendanceSteps.admin_clicks_on_reset_button_after_selecting_batch_class_and_class_date()">
+                <span>When Admin clicks on reset button after selecting batch , class and class date</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageAttendanceSteps.default_radio_button_will_be_selected_for_all_the_displayed_students(java.lang.String)">
+                <span>Then Default radio button "Unknown" will be selected for all the displayed students.</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="56"><span class="badge log fail-bg mr-2">Fail</span>Check functionality of Pagination at Manage Attendance(Admin and Class Staff) page</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageAttendanceSteps.admin_is_on_manage_attendance_admin_and_class_staff_page_ogf_manage_attendance_admin()">
+                <span>Given Admin is on  Manage Attendance(Admin and Class Staff) page ogf Manage Attendance(admin)</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageAttendancePage.clickManageAttendance()" because "this.mat" is null
+	at stepDefinitions.ManageAttendanceSteps.admin_is_on_manage_attendance_admin_and_class_staff_page_ogf_manage_attendance_admin(ManageAttendanceSteps.java:100)
+	at ?.Admin is on  Manage Attendance(Admin and Class Staff) page ogf Manage Attendance(admin)(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Attendence(Admin%20and%20Class%20Staff).feature:23)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageAttendanceSteps.when_result_is_containing_many_student_records()">
+                <span>When When result is containing many  Student records</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageAttendanceSteps.large_number_of_student_records_will_be_divided_into_smaller_discrete_pages()">
+                <span>Then Large number of Student records will be divided into smaller discrete pages</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="60"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Manage Batches(Admin) Page</p>
+            <p class="text-sm">
+              <span>7:16:19 PM</span> / <span>00:00:00:098</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Manage Batches(Admin) Page</h5>
+<span class='badge badge-success'>03.23.2022 7:16:19 PM</span>
+<span class='badge badge-danger'>03.23.2022 7:16:19 PM</span>
+<span class='badge badge-default'>00:00:00:098</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=60</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="61"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can add batch to batches list</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageBatchesSteps.admin_is_on_add_tab_of_add_edit_batches_page_admin_by_clicking_on_add_batch_in_manage_batches_page_admin()">
+                <span>Given Admin is on Add tab of ADD/Edit batches page (admin) by clicking on Add Batch in Manage Batches Page(admin)</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageBatchesPage.clickBatches()" because "this.mbp" is null
+	at stepDefinitions.ManageBatchesSteps.admin_is_on_add_tab_of_add_edit_batches_page_admin_by_clicking_on_add_batch_in_manage_batches_page_admin(ManageBatchesSteps.java:38)
+	at ?.Admin is on Add tab of ADD/Edit batches page (admin) by clicking on Add Batch in Manage Batches Page(admin)(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Batches(Admin).feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageBatchesSteps.admin_clicks_on_submit_button_after_entering_batch_name_batch_description_select_batch_status_enters_batch_no_of_classes()">
+                <span>When Admin clicks on submit button after entering Batch Name, Batch Description,select Batch Status, enters BatchNo. of classes.</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageBatchesSteps.created_batch_details_will_be_displayed_in_manage_batches_page_admin_with_auto_generated_created_date_and_modified_date_in_mm_dd_yy_format()">
+                <span>Then Created Batch details will be displayed in Manage Batches Page(Admin)   with auto generated Created Date and Modified date in MM/DD/YY format.</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="65"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can edit particular batch in batches list</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageBatchesSteps.admin_is_on_edit_tab_of_add_edit_batches_page_admin_by_clicking_on_edit_icon()">
+                <span>Given Admin is on Edit tab of ADD/Edit batches page (admin) by clicking on edit icon</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageBatchesPage.clickBatches()" because "this.mbp" is null
+	at stepDefinitions.ManageBatchesSteps.admin_is_on_edit_tab_of_add_edit_batches_page_admin_by_clicking_on_edit_icon(ManageBatchesSteps.java:63)
+	at ?.Admin is on Edit tab of ADD/Edit batches page (admin) by clicking on edit icon(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Batches(Admin).feature:15)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageBatchesSteps.admin_clicks_on_submit_button_after_updating_batch_name_batch_description_select_batch_status_baych_no_of_classes()">
+                <span>When Admin clicks on submit button after updating Batch Name, Batch Description,select Batch Status, Baych No. of classes</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageBatchesSteps.updated_batch_details_will_be_displayed_in_manage_batches_page_admin_screen_with_same_autogenerated_creation_date_and_different_modified_date_in_mm_dd_yy_format()">
+                <span>Then Updated Batch details will be displayed in Manage Batches Page(Admin) screen   with same autogenerated creation date and  different Modified date in MM/DD/YY format</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="69"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can delete particular batch in batches list</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageBatchesSteps.admin_is_on_manage_batches_page_admin_screen()">
+                <span>Given Admin is on Manage Batches Page(admin) screen</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageBatchesPage.clickBatches()" because "this.mbp" is null
+	at stepDefinitions.ManageBatchesSteps.admin_is_on_manage_batches_page_admin_screen(ManageBatchesSteps.java:89)
+	at ?.Admin is on Manage Batches Page(admin) screen(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Batches(Admin).feature:22)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageBatchesSteps.admin_clicks_on_particular_batch_trash_icon()">
+                <span>When Admin clicks on particular batch trash icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageBatchesSteps.batch_will_be_deleted_from_the_batches_list_in_manage_batches_page_admin()">
+                <span>Then Batch will be deleted from the Batches List in Manage Batches Page(admin)</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="73"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Manage Classes(Admin)Page</p>
+            <p class="text-sm">
+              <span>7:16:19 PM</span> / <span>00:00:00:187</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Manage Classes(Admin)Page</h5>
+<span class='badge badge-success'>03.23.2022 7:16:19 PM</span>
+<span class='badge badge-danger'>03.23.2022 7:16:20 PM</span>
+<span class='badge badge-default'>00:00:00:187</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=73</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="74"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can see all existing classes details</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.admin_is_on_manage_classes_page_by_clicking_on_manage_classes_tab()">
+                <span>Given Admin is on Manage Classes Page by clicking on Manage Classes tab</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageClassesAdminView.clickManageClass()" because "this.mav" is null
+	at stepDefinitions.ManageClasses_AdminView_Steps.admin_is_on_manage_classes_page_by_clicking_on_manage_classes_tab(ManageClasses_AdminView_Steps.java:32)
+	at ?.Admin is on Manage Classes Page by clicking on Manage Classes tab(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Classes(Admin).feature:8)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.admin_selects_particular_batch()">
+                <span>When Admin  selects particular Batch</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.all_the_existing_classes_details_are_displayed_in_manage_classes_page_page()">
+                <span>Then All the existing Classes details are displayed in Manage Classes Page page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="78"><span class="badge log fail-bg mr-2">Fail</span>Verify that Admin can add new class</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.admin_selects_particular_batch()">
+                <span>Given Admin  selects particular Batch</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageClassesAdminView.selectClassBatch()" because "this.mav" is null
+	at stepDefinitions.ManageClasses_AdminView_Steps.admin_selects_particular_batch(ManageClasses_AdminView_Steps.java:38)
+	at ?.Admin  selects particular Batch(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Classes(Admin).feature:14)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.clicks_on_add_classes_on_manage_classes_page()">
+                <span>And clicks on Add classes on Manage Classes page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.admin_is_navigated_to_add_or_edit_classes_page()">
+                <span>And Admin is navigated to Add or Edit Classes page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.admin_selects_add_tab()">
+                <span>When Admin Selects Add tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.admin_enters_class_details_like_class_topic_class_date_staff_name_class_description_comments_for_the_selected_batch()">
+                <span>And Admin enters class details like Class Topic, Class Date, Staff Name, Class Description, Comments for the selected batch</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.admin_clicks_on_the_submit_button()">
+                <span>And Admin clicks on the submit button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.created_class_is_displayed_in_manage_classes_page()">
+                <span>Then Created class is displayed in Manage classes page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="86"><span class="badge log fail-bg mr-2">Fail</span>Verify that Admin can edit a particular class</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.admin_selects_particular_batch()">
+                <span>Given Admin  selects particular Batch</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageClassesAdminView.selectClassBatch()" because "this.mav" is null
+	at stepDefinitions.ManageClasses_AdminView_Steps.admin_selects_particular_batch(ManageClasses_AdminView_Steps.java:38)
+	at ?.Admin  selects particular Batch(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Classes(Admin).feature:26)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.clicks_on_edit_icon_on_manage_classes_page()">
+                <span>And clicks on edit  icon on Manage Classes page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.admin_is_navigated_to_add_or_edit_classes_page()">
+                <span>And Admin is navigated to Add or Edit Classes page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.admin_selects_edit_tab()">
+                <span>When Admin Selects Edit tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.admin_updates_class_details_like_class_topic_class_date_staff_name_class_description_comments_for_the_selected_batch()">
+                <span>And Admin updates class details like Class Topic, Class Date, Staff Name, Class Description, Comments for the selected batch</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.admin_clicks_on_the_submit_button()">
+                <span>And Admin clicks on the submit button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.the_updated_class_is_displayed_in_manage_classes_page()">
+                <span>Then The updated class is displayed in Manage classes page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="94"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can delete existing classes details</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.admin_is_on_manage_classes_page_by_clicking_on_manage_classes_tab()">
+                <span>Given Admin is on Manage Classes Page by clicking on Manage Classes tab</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageClassesAdminView.clickManageClass()" because "this.mav" is null
+	at stepDefinitions.ManageClasses_AdminView_Steps.admin_is_on_manage_classes_page_by_clicking_on_manage_classes_tab(ManageClasses_AdminView_Steps.java:32)
+	at ?.Admin is on Manage Classes Page by clicking on Manage Classes tab(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Classes(Admin).feature:40)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.admin_clicks_on_the_delete_icon_of_a_particular_class()">
+                <span>When Admin clicks on the delete icon of a particular class</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageClasses_AdminView_Steps.deleted_class_details_will_be_removed_from_manage_classes_page()">
+                <span>Then Deleted Class details will be removed from Manage Classes Page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="98"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Manage Program(Admin) Page</p>
+            <p class="text-sm">
+              <span>7:16:20 PM</span> / <span>00:00:00:141</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Manage Program(Admin) Page</h5>
+<span class='badge badge-success'>03.23.2022 7:16:20 PM</span>
+<span class='badge badge-danger'>03.23.2022 7:16:20 PM</span>
+<span class='badge badge-default'>00:00:00:141</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=98</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="99"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can  Add Program details</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageProgramsSteps.admin_is_on_add_tab_in_add_edit_programs_page_by_clicking_add_program_in_manage_programs_page_admin()">
+                <span>Given Admin is on Add tab in Add/Edit Programs page by clicking Add Program in Manage Programs Page(admin)</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageProgramsPage.clickPrograms()" because "this.mpp" is null
+	at stepDefinitions.ManageProgramsSteps.admin_is_on_add_tab_in_add_edit_programs_page_by_clicking_add_program_in_manage_programs_page_admin(ManageProgramsSteps.java:33)
+	at ?.Admin is on Add tab in Add/Edit Programs page by clicking Add Program in Manage Programs Page(admin)(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Program(Admin).feature:6)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageProgramsSteps.admin_clicks_on_submit_button_after_entering_the_program_name_program_description_program_status()">
+                <span>When Admin clicks on submit button after entering the Program Name ,Program Description,Program Status</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageProgramsSteps.all_the_program_details_will_be_added_to_programs_list_in_manage_programs_page_admin_with_auto_generated_same_program_creationtime_and_program_modifiedtime_in_mm_dd_yy_hh_mm_format()">
+                <span>Then All the program details will be added to Programs List in Manage Programs Page(admin) with auto generated same ProgramCreationtime and ProgramModifiedtime in   MM/DD/YY HH:MM format</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="103"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can Edit Program details for Program</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageProgramsSteps.admin_is_on_edit_tab_in_add_edit_programs_page_by_clicking_edit_icon_in_manage_programs_page_admin()">
+                <span>Given Admin is on Edit tab in Add/Edit Programs page by clicking Edit icon in Manage Programs Page(admin)</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageProgramsPage.clickPrograms()" because "this.mpp" is null
+	at stepDefinitions.ManageProgramsSteps.admin_is_on_edit_tab_in_add_edit_programs_page_by_clicking_edit_icon_in_manage_programs_page_admin(ManageProgramsSteps.java:58)
+	at ?.Admin is on Edit tab in Add/Edit Programs page by clicking Edit icon in Manage Programs Page(admin)(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Program(Admin).feature:12)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageProgramsSteps.admin_clicks_on_submit_button_after_updating_the_required_fields_like_program_name_program_description_program_status()">
+                <span>When Admin clicks on submit button after updating the required fields like Program Name ,Program Description,Program Status</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageProgramsSteps.all_the_updated_program_details_will_be_added_to_programs_list_in_manage_programs_page_admin_with_auto_generated_same_program_creationtime_and_modified_programtime_mm_dd_yy_hh_mm_format()">
+                <span>Then All the updated program details will be added to Programs List in Manage Programs Page(admin) with auto generated same ProgramCreationtime and modified Programtime MM/DD/YY HH:MM format</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="107"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can Delete the program</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageProgramsSteps.admin_is_on_manage_programs_page_admin_by_clicking_on_programs_tab()">
+                <span>Given Admin is on Manage Programs Page(admin) by clicking on Programs Tab</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageProgramsPage.clickPrograms()" because "this.mpp" is null
+	at stepDefinitions.ManageProgramsSteps.admin_is_on_manage_programs_page_admin_by_clicking_on_programs_tab(ManageProgramsSteps.java:84)
+	at ?.Admin is on Manage Programs Page(admin) by clicking on Programs Tab(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Program(Admin).feature:18)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageProgramsSteps.admin_clicks_on_trash_icon_for_any_program_in_programs_list()">
+                <span>When Admin clicks on Trash icon for any program in Programs List</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageProgramsSteps.program_will_be_deleted_from_the_programs_list_in_manage_programs_page_admin()">
+                <span>Then Program will be deleted from the Programs List in Manage Programs Page(admin)</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="111"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Manage Recording(Admin)Page</p>
+            <p class="text-sm">
+              <span>7:16:20 PM</span> / <span>00:00:00:073</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Manage Recording(Admin)Page</h5>
+<span class='badge badge-success'>03.23.2022 7:16:20 PM</span>
+<span class='badge badge-danger'>03.23.2022 7:16:20 PM</span>
+<span class='badge badge-default'>00:00:00:073</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=111</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="112"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can upload Recording</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageRecordingSteps.admin_is_on_manage_recording_admin_page_by_clicking_manage_recordings_tab1()">
+                <span>Given Admin is on Manage Recording(Admin) page by clicking Manage Recordings tab</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageRecordingPage.clickManageRecording()" because "this.mrp" is null
+	at stepDefinitions.ManageRecordingSteps.admin_is_on_manage_recording_admin_page_by_clicking_manage_recordings_tab1(ManageRecordingSteps.java:29)
+	at ?.Admin is on Manage Recording(Admin) page by clicking Manage Recordings tab(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Recording(Admin).feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageRecordingSteps.admin_upload_recording_after_selecting_batch_and_topic()">
+                <span>When Admin upload recording after selecting Batch and topic</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageRecordingSteps.uploaded_recording_will_be_displayed_in_manage_classes_page_admin_view_for_selected_topic()">
+                <span>Then Uploaded recording will be displayed in Manage Classes page(Admin View) for selected topic</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="116"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can Upload  Resources</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageRecordingSteps.admin_is_on_manage_recording_admin_page_by_clicking_manage_recordings_tab()">
+                <span>Given Admin is on Manage Recording(Admin) page by clicking Manage Recordings tab"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageRecordingPage.clickManageRecording()" because "this.mrp" is null
+	at stepDefinitions.ManageRecordingSteps.admin_is_on_manage_recording_admin_page_by_clicking_manage_recordings_tab(ManageRecordingSteps.java:52)
+	at ?.Admin is on Manage Recording(Admin) page by clicking Manage Recordings tab"(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Recording(Admin).feature:13)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageRecordingSteps.admin_upload_resources_after_selecting_batch_and_topic()">
+                <span>When Admin upload resources after selecting Batch and topic</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageRecordingSteps.upload_resources_will_be_displayed_in_manage_classes_page_admin_view_for_selected_topic()">
+                <span>Then Upload resources will be displayed in Manage Classes page(Admin View) for selected topic</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="120"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Manage Users(Admin)Page</p>
+            <p class="text-sm">
+              <span>7:16:20 PM</span> / <span>00:00:09:324</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Manage Users(Admin)Page</h5>
+<span class='badge badge-success'>03.23.2022 7:16:20 PM</span>
+<span class='badge badge-danger'>03.23.2022 7:16:29 PM</span>
+<span class='badge badge-default'>00:00:09:324</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=120</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="121"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can search users by giving Email or Batch or Skill or program</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageUsers_AdminSteps.admin_is_on_lms_admin_user_page()">
+                <span>Given Admin is on LMS Admin User Page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'LAPTOP-HH7IGSDH', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4f6b03a329f0f6585012d721a3f7802d, get {url=https://www.LMS-UI.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\sethu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57514}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57514/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f6b03a329f0f6585012d721a3f7802d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at stepDefinitions.ManageUsers_AdminSteps.admin_is_on_lms_admin_user_page(ManageUsers_AdminSteps.java:47)
+	at ?.Admin is on LMS Admin User Page(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Users(Admin).feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageUsers_AdminSteps.admin_clicks_on_search_button_after_entering_email_or_batch_or_skill_or_program()">
+                <span>When Admin clicks on search button after entering  Email or Batch or Skill or program</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageUsers_AdminSteps.admin_will_be_navigated_to_manage_users_admin_page_and_registered_user_list_will_be_displayed()">
+                <span>Then Admin will be navigated to Manage users(admin) page and Registered User list will be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="125"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can edit registered user in Manage users(admin) page</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageUsers_AdminSteps.admin_is_on_manage_users_admin_page_registered_user_list_and_clicks_on_edit_icon()">
+                <span>Given Admin is on Manage users(admin) page, Registered User list,and clicks on edit icon</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageRegisteredUsersPage.clickEditButton()" because "this.mrp" is null
+	at stepDefinitions.ManageUsers_AdminSteps.admin_is_on_manage_users_admin_page_registered_user_list_and_clicks_on_edit_icon(ManageUsers_AdminSteps.java:76)
+	at ?.Admin is on Manage users(admin) page, Registered User list,and clicks on edit icon(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Users(Admin).feature:13)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageUsers_AdminSteps.admin_will_be_navigated_to_manage_users_admin_page_where_user_details_will_be_displayed()">
+                <span>When Admin  will be navigated to Manage users(admin) page where User details will be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageUsers_AdminSteps.admin_will_be_able_to_edit_user_details_like_time_zone_user_role_batch_program_and_click_on_save()">
+                <span>Then Admin will be able to edit User details like Time zone, User role batch, Program and click on save</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="129"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can delete particular registered user in Manage users(admin) page</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageUsers_AdminSteps.admin_is_on_manage_users_admin_page_registered_users_list()">
+                <span>Given Admin is on Manage users(admin) page, Registered Users list</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageUsers_AdminPage.clickManageUsers()" because "this.mup" is null
+	at stepDefinitions.ManageUsers_AdminSteps.admin_is_on_manage_users_admin_page_registered_users_list(ManageUsers_AdminSteps.java:115)
+	at ?.Admin is on Manage users(admin) page, Registered Users list(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Users(Admin).feature:19)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageUsers_AdminSteps.admin_clicks_on_trash_icon_of_particular_registered_user()">
+                <span>When Admin clicks on trash icon of particular registered user</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageUsers_AdminSteps.deleted_registered_user_will_be_removed_from_registered_users_list()">
+                <span>Then Deleted registered user will be removed from Registered users list</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="133"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin will be navigated to manage users(admin) page when clicked on eye icon</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageUsers_AdminSteps.admin_is_on_manage_users_admin_page_registered_users_list()">
+                <span>Given Admin is on Manage users(admin) page, Registered Users list</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageUsers_AdminPage.clickManageUsers()" because "this.mup" is null
+	at stepDefinitions.ManageUsers_AdminSteps.admin_is_on_manage_users_admin_page_registered_users_list(ManageUsers_AdminSteps.java:115)
+	at ?.Admin is on Manage users(admin) page, Registered Users list(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Manage%20Users(Admin).feature:25)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageUsers_AdminSteps.admin_clicks_on_eye_icon_for_particular_user()">
+                <span>When Admin clicks on eye icon for particular user</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageUsers_AdminSteps.admin_will_be_navigated_to_manage_users_admin_page_and_view_the_user_details_only_in_read_only_format()">
+                <span>Then Admin will be navigated to Manage users (admin) page and view the User details only in read only format</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="137"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Assignment functions performed by User</p>
+            <p class="text-sm">
+              <span>7:16:29 PM</span> / <span>00:00:19:034</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Assignment functions performed by User</h5>
+<span class='badge badge-success'>03.23.2022 7:16:29 PM</span>
+<span class='badge badge-danger'>03.23.2022 7:16:48 PM</span>
+<span class='badge badge-default'>00:00:19:034</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=137</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="138"><span class="badge log fail-bg mr-2">Fail</span>Check whether User can Edit existing assignments for particular Batch</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageAssignmenets_UserViewSteps.given_user_is_on_manage_assignments_page_user_view_by_clicking_on_edit_assignment_in_manage_assignments_page_admin()">
+                <span>Given Given User  is on  manage Assignments page(User view) by clicking on edit Assignment in Manage Assignments Page(admin)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'LAPTOP-HH7IGSDH', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3771e344cc175670613e0ed062b6b9d7, get {url=https://www.LMS-UI.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\sethu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57568/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3771e344cc175670613e0ed062b6b9d7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at stepDefinitions.ManageAssignmenets_UserViewSteps.given_user_is_on_manage_assignments_page_user_view_by_clicking_on_edit_assignment_in_manage_assignments_page_admin(ManageAssignmenets_UserViewSteps.java:39)
+	at ?.Given User  is on  manage Assignments page(User view) by clicking on edit Assignment in Manage Assignments Page(admin)(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/ManageAssignmentsUserView.feature:4)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageAssignmenets_UserViewSteps.admin_clicks_on_download_button_after_updating_one_or_more_assignment_details()">
+                <span>When Admin clicks on download  button after updating one or more assignment details</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageAssignmenets_UserViewSteps.message_will_be_displayed_like(java.lang.String)">
+                <span>Then Message will be displayed like " Assignments are successfully downloaded"</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="142"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Manage Assignment Submission by Admin</p>
+            <p class="text-sm">
+              <span>7:16:48 PM</span> / <span>00:00:35:378</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Manage Assignment Submission by Admin</h5>
+<span class='badge badge-success'>03.23.2022 7:16:48 PM</span>
+<span class='badge badge-danger'>03.23.2022 7:17:24 PM</span>
+<span class='badge badge-default'>00:00:35:378</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=142</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="143"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can manage students submission by selecting Make Grade Visible</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageSubmissionSteps.admin_is_on_manage_submissions_admin_page_by_clicking_on_manage_button_in_manage_assignments_page_admin()">
+                <span>Given Admin is on Manage Submissions(Admin) page by clicking on Manage button in Manage assignments page(admin)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'LAPTOP-HH7IGSDH', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b106ae9e925d76eedf1e147887cc2706, get {url=https://www.LMS-UI.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\sethu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57632}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57632/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b106ae9e925d76eedf1e147887cc2706
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at stepDefinitions.ManageSubmissionSteps.admin_is_on_manage_submissions_admin_page_by_clicking_on_manage_button_in_manage_assignments_page_admin(ManageSubmissionSteps.java:41)
+	at ?.Admin is on Manage Submissions(Admin) page by clicking on Manage button in Manage assignments page(admin)(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/ManageSubmissions(Admin).feature:5)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageSubmissionSteps.admin_clicks_on_submit_button_after_selecting_all_th_details_like_batch_assignment_name_assignment_date_grade_by_grade_make_garde_visible_and_add_comments()">
+                <span>When Admin clicks on submit button after selecting all th details like Batch,Assignment Name,Assignment Date ,Grade By ,Grade ,Make Garde Visible and add comments</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageSubmissionSteps.grade_details_will_be_visible_to_both_admin_and_user_view()">
+                <span>Then Grade Details will be visible to both Admin and User View</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="147"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can manage students submission by unselecting Make Grade Viisble</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageSubmissionSteps.admin_is_on_manage_submissions_admin_page_by_clicking_on_manage_button_in_manage_assignments_page_admin()">
+                <span>Given Admin is on Manage Submissions(Admin) page by clicking on Manage button in Manage assignments page(admin)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'LAPTOP-HH7IGSDH', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abc6e06cae871bd056c559ed83c285eb, get {url=https://www.LMS-UI.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\sethu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57663/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: abc6e06cae871bd056c559ed83c285eb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at stepDefinitions.ManageSubmissionSteps.admin_is_on_manage_submissions_admin_page_by_clicking_on_manage_button_in_manage_assignments_page_admin(ManageSubmissionSteps.java:41)
+	at ?.Admin is on Manage Submissions(Admin) page by clicking on Manage button in Manage assignments page(admin)(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/ManageSubmissions(Admin).feature:10)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageSubmissionSteps.admin_clicks_on_submit_button_after_selecting_all_the_details_like_batch_assignment_name_assignment_date_grade_by_grade_add_comments()">
+                <span>When Admin clicks on Submit button after selecting all the details like Batch,Assignment Name,Assignment Date ,Grade By ,Grade ,add comments</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageSubmissionSteps.grade_details_will_be_visible_only_to_admin()">
+                <span>Then Grade Details will be visible only to Admin</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="151"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Check whether Admin can create notification</p>
+            <p class="text-sm">
+              <span>7:17:24 PM</span> / <span>00:00:11:910</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Check whether Admin can create notification</h5>
+<span class='badge badge-success'>03.23.2022 7:17:24 PM</span>
+<span class='badge badge-danger'>03.23.2022 7:17:36 PM</span>
+<span class='badge badge-default'>00:00:11:910</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=151</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="152"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can create notification</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageNotificationSteps.admin_is_on_notification_page()">
+                <span>Given Admin is on  Notification page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'LAPTOP-HH7IGSDH', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e067abfc25487129a5624e14c4e91035, get {url=https://www.LMS-UI.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\sethu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57695}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57695/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e067abfc25487129a5624e14c4e91035
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at stepDefinitions.ManageNotificationSteps.admin_is_on_notification_page(ManageNotificationSteps.java:37)
+	at ?.Admin is on  Notification page(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/Notification.feature:5)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageNotificationSteps.admin_clicks_on_submit_button_after_selecting_program_name_from_dropdown_and_enter_details_hackathon_name_hackathon_description_hackathon_date_and_hackathon_comments()">
+                <span>When Admin clicks on submit button after selectingProgram Name from dropdown and enter details  Hackathon Name,hackathon description,Hackathon date and Hackathon comments</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageNotificationSteps.notifications_will_be_submitted_successfully()">
+                <span>Then Notifications will be submitted successfully</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="156"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">View new Unassigned Users(Admin)Page</p>
+            <p class="text-sm">
+              <span>7:17:36 PM</span> / <span>00:00:23:800</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">View new Unassigned Users(Admin)Page</h5>
+<span class='badge badge-success'>03.23.2022 7:17:36 PM</span>
+<span class='badge badge-danger'>03.23.2022 7:17:59 PM</span>
+<span class='badge badge-default'>00:00:23:800</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=156</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="157"><span class="badge log fail-bg mr-2">Fail</span>Check  whether Admin can be able  to view New Unassigned user</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageUnRegisteredUsersSteps.admin_is_on_lms_admin_user_page()">
+                <span>Given Admin is on LMS   Admin  User Page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'LAPTOP-HH7IGSDH', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c387658c285313fd5edb91a475f6afb, get {url=https://www.LMS-UI.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\sethu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57727}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57727/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c387658c285313fd5edb91a475f6afb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at stepDefinitions.ManageUnRegisteredUsersSteps.admin_is_on_lms_admin_user_page(ManageUnRegisteredUsersSteps.java:48)
+	at ?.Admin is on LMS   Admin  User Page(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/View%20New%20UNassigned%20Users(Admin).feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageUnRegisteredUsersSteps.admin_clicks_on_new_unassigned_user_hyperlink()">
+                <span>When Admin clicks on New Unassigned User hyperlink</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageUnRegisteredUsersSteps.admin_will_be_navigated_to_manage_user_admin_page_unregistered_user_list_will_be_displayed()">
+                <span>Then Admin will be navigated to  Manage user(admin) page, Unregistered User list will be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="161"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can be able to edit Unregistered user</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageUnRegisteredUsersSteps.admin_is_on_manage_user_admin_page_unregistered_user_list()">
+                <span>Given Admin is on  Manage user(admin) page, Unregistered User list</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageUnRegisteredUsersPage.verifyDisplayButtons()" because "this.mrup" is null
+	at stepDefinitions.ManageUnRegisteredUsersSteps.admin_is_on_manage_user_admin_page_unregistered_user_list(ManageUnRegisteredUsersSteps.java:76)
+	at ?.Admin is on  Manage user(admin) page, Unregistered User list(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/View%20New%20UNassigned%20Users(Admin).feature:13)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageUnRegisteredUsersSteps.admin_clicks_on_edit_icon_of_particular_unregistered_user_and_admin_will_be_navigated_to_manage_users_admin_page()">
+                <span>When Admin clicks on edit icon of particular unregistered user and admin will be navigated to manage users(admin) page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageUnRegisteredUsersSteps.admin_will_be_able_to_edit_user_details_like_time_zone_user_role_program_and_click_on_save()">
+                <span>Then Admin will be able to edit User details like Time zone, User  role , Program and click on save</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="165"><span class="badge log fail-bg mr-2">Fail</span>Check whether Admin can be able to delete Unregistered user</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageUnRegisteredUsersSteps.admin_is_on_manage_user_admin_page_unregistered_user_list()">
+                <span>Given Admin is on  Manage user(admin) page, Unregistered User list</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageUnRegisteredUsersPage.verifyDisplayButtons()" because "this.mrup" is null
+	at stepDefinitions.ManageUnRegisteredUsersSteps.admin_is_on_manage_user_admin_page_unregistered_user_list(ManageUnRegisteredUsersSteps.java:76)
+	at ?.Admin is on  Manage user(admin) page, Unregistered User list(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/View%20New%20UNassigned%20Users(Admin).feature:19)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageUnRegisteredUsersSteps.admin_clicks_on_trash_icon_of_particular_unregistered_user()">
+                <span>When Admin clicks on trash icon of particular unregistered user</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageUnRegisteredUsersSteps.deleted_unregistered_user_will_be_removed_from_unregistered_users_list()">
+                <span>Then Deleted unregistered user will be removed from Unregistered users list</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="169"><span class="badge log fail-bg mr-2">Fail</span>Check functionality of Pagination at Manage user(Admin) page</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.ManageUnRegisteredUsersSteps.admin_is_on_manage_users_admin_page_of_user_list_unregistered()">
+                <span>Given Admin is on Manage users(admin) page of User list(Unregistered)</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageObjects.ManageUnRegisteredUsersPage.verifyDisplayButtons()" because "this.mrup" is null
+	at stepDefinitions.ManageUnRegisteredUsersSteps.admin_is_on_manage_users_admin_page_of_user_list_unregistered(ManageUnRegisteredUsersSteps.java:129)
+	at ?.Admin is on Manage users(admin) page of User list(Unregistered)(file:///C:/Users/sethu/eclipse-workspace/LMS_Hackathon/features/View%20New%20UNassigned%20Users(Admin).feature:26)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageUnRegisteredUsersSteps.when_result_is_containing_many_user_records()">
+                <span>When When result is containing many user records</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ManageUnRegisteredUsersSteps.large_number_of_user_records_will_be_divided_into_smaller_discrete_pages()">
+                <span>Then Large number of user records will be divided into smaller discrete pages</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>14</span>
+</span>
+<p class="name">org.openqa.selenium.WebDriverException</p>
+<p class="duration text-sm">14 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.WebDriverException</h4>
+<span status="fail" class='badge log badge-danger'>14 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:15:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Given Admin/User is on LMS portal with Login button Link</a>
+<div class="">
+<span class="badge badge-default">Launch Web Application.Check whether Admin/user could able to navigate to Log-In Screen page.Given Admin/User is on LMS portal with Login button Link</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:15:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='9'>Given Admin/User is on LMS Log-In Screen</a>
+<div class="">
+<span class="badge badge-default">Login Page Functions.Login Data driven with valid Credentials.Given Admin/User is on LMS Log-In Screen</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:15:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='14'>Given Admin/User is on LMS Log-In Screen</a>
+<div class="">
+<span class="badge badge-default">Login Page Functions.Login Data driven with valid Credentials.Given Admin/User is on LMS Log-In Screen</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:15:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='19'>Given Admin/User is on LMS Log-In Screen</a>
+<div class="">
+<span class="badge badge-default">Login Page Functions.Login Data driven with valid Credentials.Given Admin/User is on LMS Log-In Screen</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:15:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='30' id='32'>Given Admin is on Add tab of manage Assignments page(admin view) by clicking on Add Assignment in Manage Assignments Page(admin)</a>
+<div class="">
+<span class="badge badge-default">Assignment functions performed by Admin.Check whether Admin can add New assignments for particular Batch.Given Admin is on Add tab of manage Assignments page(admin view) by clicking on Add Assignment in Manage Assignments Page(admin)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:15:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='45'>Given Admin is on Manage Attendance(Admin and Class Staff) page</a>
+<div class="">
+<span class="badge badge-default">Manage Attendence(Admin And Class Staff)Page.Check whether Admin can view the attendance details.Given Admin is on Manage Attendance(Admin and Class Staff) page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='49'>Given Admin is on Manage Attendance(Admin and Class Staff) page</a>
+<div class="">
+<span class="badge badge-default">Manage Attendence(Admin And Class Staff)Page.Check whether Admin can save the attendance details.Given Admin is on Manage Attendance(Admin and Class Staff) page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='53'>Given Admin is on Manage Attendance(Admin and Class Staff) page</a>
+<div class="">
+<span class="badge badge-default">Manage Attendence(Admin And Class Staff)Page.Check whether Admin can reset the attendance details.Given Admin is on Manage Attendance(Admin and Class Staff) page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='120' id='122'>Given Admin is on LMS Admin User Page</a>
+<div class="">
+<span class="badge badge-default">Manage Users(Admin)Page.Check whether Admin can search users by giving Email or Batch or Skill or program.Given Admin is on LMS Admin User Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='137' id='139'>Given Given User is on manage Assignments page(User view) by clicking on edit Assignment in Manage Assignments Page(admin)</a>
+<div class="">
+<span class="badge badge-default">Assignment functions performed by User.Check whether User can Edit existing assignments for particular Batch.Given Given User is on manage Assignments page(User view) by clicking on edit Assignment in Manage Assignments Page(admin)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='142' id='144'>Given Admin is on Manage Submissions(Admin) page by clicking on Manage button in Manage assignments page(admin)</a>
+<div class="">
+<span class="badge badge-default">Manage Assignment Submission by Admin.Check whether Admin can manage students submission by selecting Make Grade Visible.Given Admin is on Manage Submissions(Admin) page by clicking on Manage button in Manage assignments page(admin)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:17:16 PM</td>
+<td>
+<a href="#" class="linked" test-id='142' id='148'>Given Admin is on Manage Submissions(Admin) page by clicking on Manage button in Manage assignments page(admin)</a>
+<div class="">
+<span class="badge badge-default">Manage Assignment Submission by Admin.Check whether Admin can manage students submission by unselecting Make Grade Viisble.Given Admin is on Manage Submissions(Admin) page by clicking on Manage button in Manage assignments page(admin)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:17:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='151' id='153'>Given Admin is on Notification page</a>
+<div class="">
+<span class="badge badge-default">Check whether Admin can create notification.Check whether Admin can create notification.Given Admin is on Notification page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:17:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='156' id='158'>Given Admin is on LMS Admin User Page</a>
+<div class="">
+<span class="badge badge-default">View new Unassigned Users(Admin)Page.Check whether Admin can be able to view New Unassigned user.Given Admin is on LMS Admin User Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>22</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">22 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>22 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:15:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='25'>Given Admin/User is on Answer Security Question page by by clicking on Forgot password link</a>
+<div class="">
+<span class="badge badge-default">Login Page Functions.Reset password link Data Driven.Given Admin/User is on Answer Security Question page by by clicking on Forgot password link</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:15:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='30' id='36'>Given Admin is on Edit tab of manage Assignments page(admin view) by clicking on Add Assignment in Manage Assignments Page(admin)</a>
+<div class="">
+<span class="badge badge-default">Assignment functions performed by Admin.Check whether Admin can Edit existing assignments for particular Batch.Given Admin is on Edit tab of manage Assignments page(admin view) by clicking on Add Assignment in Manage Assignments Page(admin)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:15:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='30' id='40'>Given Admin is on Manage Assignments Page(admin)</a>
+<div class="">
+<span class="badge badge-default">Assignment functions performed by Admin.Check whether Admin can Delete existing assignments for particular Batch.Given Admin is on Manage Assignments Page(admin)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='57'>Given Admin is on Manage Attendance(Admin and Class Staff) page ogf Manage Attendance(admin)</a>
+<div class="">
+<span class="badge badge-default">Manage Attendence(Admin And Class Staff)Page.Check functionality of Pagination at Manage Attendance(Admin and Class Staff) page.Given Admin is on Manage Attendance(Admin and Class Staff) page ogf Manage Attendance(admin)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='62'>Given Admin is on Add tab of ADD/Edit batches page (admin) by clicking on Add Batch in Manage Batches Page(admin)</a>
+<div class="">
+<span class="badge badge-default">Manage Batches(Admin) Page.Check whether Admin can add batch to batches list.Given Admin is on Add tab of ADD/Edit batches page (admin) by clicking on Add Batch in Manage Batches Page(admin)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='66'>Given Admin is on Edit tab of ADD/Edit batches page (admin) by clicking on edit icon</a>
+<div class="">
+<span class="badge badge-default">Manage Batches(Admin) Page.Check whether Admin can edit particular batch in batches list.Given Admin is on Edit tab of ADD/Edit batches page (admin) by clicking on edit icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='70'>Given Admin is on Manage Batches Page(admin) screen</a>
+<div class="">
+<span class="badge badge-default">Manage Batches(Admin) Page.Check whether Admin can delete particular batch in batches list.Given Admin is on Manage Batches Page(admin) screen</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='75'>Given Admin is on Manage Classes Page by clicking on Manage Classes tab</a>
+<div class="">
+<span class="badge badge-default">Manage Classes(Admin)Page.Check whether Admin can see all existing classes details.Given Admin is on Manage Classes Page by clicking on Manage Classes tab</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='79'>Given Admin selects particular Batch</a>
+<div class="">
+<span class="badge badge-default">Manage Classes(Admin)Page.Verify that Admin can add new class.Given Admin selects particular Batch</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='87'>Given Admin selects particular Batch</a>
+<div class="">
+<span class="badge badge-default">Manage Classes(Admin)Page.Verify that Admin can edit a particular class.Given Admin selects particular Batch</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='95'>Given Admin is on Manage Classes Page by clicking on Manage Classes tab</a>
+<div class="">
+<span class="badge badge-default">Manage Classes(Admin)Page.Check whether Admin can delete existing classes details.Given Admin is on Manage Classes Page by clicking on Manage Classes tab</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='98' id='100'>Given Admin is on Add tab in Add/Edit Programs page by clicking Add Program in Manage Programs Page(admin)</a>
+<div class="">
+<span class="badge badge-default">Manage Program(Admin) Page.Check whether Admin can Add Program details.Given Admin is on Add tab in Add/Edit Programs page by clicking Add Program in Manage Programs Page(admin)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='98' id='104'>Given Admin is on Edit tab in Add/Edit Programs page by clicking Edit icon in Manage Programs Page(admin)</a>
+<div class="">
+<span class="badge badge-default">Manage Program(Admin) Page.Check whether Admin can Edit Program details for Program.Given Admin is on Edit tab in Add/Edit Programs page by clicking Edit icon in Manage Programs Page(admin)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='98' id='108'>Given Admin is on Manage Programs Page(admin) by clicking on Programs Tab</a>
+<div class="">
+<span class="badge badge-default">Manage Program(Admin) Page.Check whether Admin can Delete the program.Given Admin is on Manage Programs Page(admin) by clicking on Programs Tab</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='111' id='113'>Given Admin is on Manage Recording(Admin) page by clicking Manage Recordings tab</a>
+<div class="">
+<span class="badge badge-default">Manage Recording(Admin)Page.Check whether Admin can upload Recording.Given Admin is on Manage Recording(Admin) page by clicking Manage Recordings tab</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='111' id='117'>Given Admin is on Manage Recording(Admin) page by clicking Manage Recordings tab"</a>
+<div class="">
+<span class="badge badge-default">Manage Recording(Admin)Page.Check whether Admin can Upload Resources.Given Admin is on Manage Recording(Admin) page by clicking Manage Recordings tab"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='120' id='126'>Given Admin is on Manage users(admin) page, Registered User list,and clicks on edit icon</a>
+<div class="">
+<span class="badge badge-default">Manage Users(Admin)Page.Check whether Admin can edit registered user in Manage users(admin) page.Given Admin is on Manage users(admin) page, Registered User list,and clicks on edit icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='120' id='130'>Given Admin is on Manage users(admin) page, Registered Users list</a>
+<div class="">
+<span class="badge badge-default">Manage Users(Admin)Page.Check whether Admin can delete particular registered user in Manage users(admin) page.Given Admin is on Manage users(admin) page, Registered Users list</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:16:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='120' id='134'>Given Admin is on Manage users(admin) page, Registered Users list</a>
+<div class="">
+<span class="badge badge-default">Manage Users(Admin)Page.Check whether Admin will be navigated to manage users(admin) page when clicked on eye icon.Given Admin is on Manage users(admin) page, Registered Users list</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:17:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='156' id='162'>Given Admin is on Manage user(admin) page, Unregistered User list</a>
+<div class="">
+<span class="badge badge-default">View new Unassigned Users(Admin)Page.Check whether Admin can be able to edit Unregistered user.Given Admin is on Manage user(admin) page, Unregistered User list</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:17:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='156' id='166'>Given Admin is on Manage user(admin) page, Unregistered User list</a>
+<div class="">
+<span class="badge badge-default">View new Unassigned Users(Admin)Page.Check whether Admin can be able to delete Unregistered user.Given Admin is on Manage user(admin) page, Unregistered User list</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:17:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='156' id='170'>Given Admin is on Manage users(admin) page of User list(Unregistered)</a>
+<div class="">
+<span class="badge badge-default">View new Unassigned Users(Admin)Page.Check functionality of Pagination at Manage user(Admin) page.Given Admin is on Manage users(admin) page of User list(Unregistered)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 23, 2022 07:15:18 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 23, 2022 07:18:00 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>13</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>13</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>36</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
+<div>
+<small data-tooltip='29%'><b>36</b> steps failed,
+<b>85</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Launch Web Application":6.234,"Login Page Functions":21.238,"Assignment functions performed by Admin":6.946,"Manage Attendence(Admin And Class Staff)Page":24.578,"Manage Batches(Admin) Page":0.098,"Manage Classes(Admin)Page":0.187,"Manage Program(Admin) Page":0.141,"Manage Recording(Admin)Page":0.073,"Manage Users(Admin)Page":9.324,"Assignment functions performed by User":19.034,"Manage Assignment Submission by Admin":35.378,"Check whether Admin can create notification":11.91,"View new Unassigned Users(Admin)Page":23.8
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 13,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 36,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 36,
+warningGrandChild: 0,
+skipGrandChild: 85,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
